@@ -1,0 +1,74 @@
+.section-two-container {
+  padding: 50px 0px;
+
+  .top-title {
+    @include pad-top-bot;
+    margin-bottom: 2rem;
+    font-size: $small-f + 4;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    .box {
+      background-color: $orange;
+      width: 6px;
+      height: 6px;
+      margin-right: 5px;
+    }
+  }
+
+  .title-container {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .title {
+      width: 60%;
+      @include Playfair;
+      font-size: $title-f + 4;
+      @include s-d {
+        width: 100%;
+      }
+      @include xs-d {
+        width: 100%;
+        font-size: $title-f;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .description-container {
+    @include pad-top-bot;
+    display: flex;
+    @include s-d {
+      display: block;
+    }
+
+    .underline-container {
+      width: 30%;
+      .underline {
+        padding: 5px;
+        width: 20px;
+        border-bottom: rgba(white, 0.6) solid thin;
+        @include s-d {
+          display: none;
+        }
+      }
+    }
+    .description {
+      width: 70%;
+      font-size: $small-f + 4;
+      line-height: 2;
+      @include s-d {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}

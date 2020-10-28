@@ -1,0 +1,109 @@
+.footer-container {
+  background-color: $black;
+  .footer {
+    padding: 100px 0px;
+    @include m-d {
+      width: 80%;
+    }
+
+    .title {
+      font-size: 18pt;
+      @include Playfair;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      @include s-d {
+        display: block;
+      }
+      .column-left {
+        ul {
+          list-style-type: none;
+
+          padding: 0;
+
+          li {
+            opacity: 0;
+            color: white;
+            margin-bottom: 7px;
+            font-size: 50pt;
+            font-weight: bold;
+            @include s-d {
+              font-size: 30pt;
+            }
+          }
+        }
+      }
+      .column-right {
+        color: white;
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          li {
+            margin-bottom: 15px;
+            font-size: 12pt;
+            transition: all 1s;
+            letter-spacing: 2px;
+
+            &:hover {
+              color: $orange;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .row {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 8pt;
+      align-items: center;
+      .column-left {
+        color: grey;
+        letter-spacing: 2px;
+        .top-text {
+          margin-bottom: 10px;
+        }
+        .bottom-text {
+          display: flex;
+          @include s-d {
+            display: block;
+          }
+
+          .left-text {
+            margin-right: 20px;
+
+            @include s-d {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+      .column-right {
+        color: white;
+        border: solid grey 1px;
+        color: grey;
+        padding: 2px 4px;
+        white-space: nowrap;
+        font-size: 12pt;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        transition: all 0.5s;
+        &:hover {
+          cursor: pointer;
+          color: white;
+          border-color: white;
+        }
+      }
+    }
+  }
+}

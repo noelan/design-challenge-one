@@ -1,0 +1,30 @@
+@mixin img-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+@mixin pad-top-bot {
+  padding: 10px 0px;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}

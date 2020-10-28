@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Playfair+Display:wght@400;500;600&family=Work+Sans:wght@300;400;500&display=swap");
+
+@mixin Playfair {
+  font-family: "Playfair Display", serif;
+}
+
+@mixin Worksans {
+  font-family: "Work Sans", sans-serif;
+}
+
+@mixin Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+$small-f: 6pt;
+$default-f: 12pt;
+$title-f: 16pt;
